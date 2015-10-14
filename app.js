@@ -3,21 +3,28 @@
 var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 
+<<<<<<< HEAD
 var Beer = function(src, name, vote) {
   this.src = src; //change path
   this.name = name; // change label
   this.vote = 0; // remove from instances
+=======
+var Beer = function(src, drink) {
+  this.src = src;
+  this.drink = drink;
+  this.vote = 0;
+>>>>>>> 7c8d8bfbf108fbde218cfc3c284927266138b55a
 }
 
 //images List
-var abt12 = new Beer('img/abt12.jpg', 'Abt 12', 0);
-var bluemoon = new Beer('img/bluemoon.jpg', 'Blue Moon', 0);
-var bud = new Beer('img/bud.jpg', 'Budweiser', 0);
-var corona = new Beer('img/corona.jpg', 'Corona', 0);
-var frank = new Beer('img/franziskanber.jpg', 'Frankziskanber', 0);
-var guinness = new Beer('img/guinness.jpg', 'Guinness', 0);
-var koestritzer = new Beer('img/koestritzer.jpg', 'Koestritzer', 0);
-var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks', 0);
+var abt12 = new Beer('img/abt12.jpg', 'Abt 12');
+var bluemoon = new Beer('img/bluemoon.jpg', 'Blue Moon');
+var bud = new Beer('img/bud.jpg', 'Budweiser');
+var corona = new Beer('img/corona.jpg', 'Corona');
+var frank = new Beer('img/franziskanber.jpg', 'Frankziskanber');
+var guinness = new Beer('img/guinness.jpg', 'Guinness');
+var koestritzer = new Beer('img/koestritzer.jpg', 'Koestritzer');
+var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
 
 
 //Generate Random #1
@@ -69,12 +76,83 @@ displayImg();
 
 button1.addEventListener("click", function() {
   beerList[ran1].vote += 1;
+<<<<<<< HEAD
   console.log(beerList[ran1].name + ' has ' + beerList[ran1].vote + ' votes');
+=======
+  console.log(beerList[ran1].drink + ' has ' + beerList[ran1].vote + ' votes');
+
+>>>>>>> 7c8d8bfbf108fbde218cfc3c284927266138b55a
   displayImg();
 });
 
 button2.addEventListener("click", function() {
   beerList[ran2].vote += 1;
-  console.log(beerList[ran2].name + ' has ' + beerList[ran2].vote + ' votes');
+  console.log(beerList[ran2].drink + ' has ' + beerList[ran2].vote + ' votes');
   displayImg();
+});
+
+// chart data 
+var data = [
+{
+  value: 5,
+  label: 'abt12',
+  color: '#811BD6', 
+  highlight:'#811BB6'
+},
+{
+  value: 20,
+  label: 'bluemoon',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[2].vote,
+  label: 'bud',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[3].vote,
+  label: 'corona',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[4].vote,
+  label: 'frank',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[5].vote,
+  label: 'guinness',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[6].vote,
+  label: 'koestritzer',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+},
+{
+  value: beerList[7].vote,
+  label: 'macandjacks',
+  color: '#9CBABA',
+  highlight:'#9CBA99'
+}
+];
+
+var context = document.getElementById('chart').getContext('2d');
+var beerChart = new Chart(context).Doughnut(data, {
+  
+  animationSteps: 200,
+
+  animationEasing: "easeOutBounce",
+
+  animateRotate: true,
+
+  animateScale: true
+
+
 });
