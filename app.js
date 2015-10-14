@@ -4,9 +4,9 @@ var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 
 var Beer = function(src, name, vote) {
-  this.src = src;
-  this.name = name;
-  this.vote = 0;
+  this.src = src; //change path
+  this.name = name; // change label
+  this.vote = 0; // remove from instances
 }
 
 //images List
@@ -70,9 +70,9 @@ displayImg();
 button1.addEventListener("click", function() {
   beerList[ran1].vote += 1;
   console.log(beerList[ran1].name + ' has ' + beerList[ran1].vote + ' votes');
-
   displayImg();
 });
+
 button2.addEventListener("click", function() {
   beerList[ran2].vote += 1;
   console.log(beerList[ran2].name + ' has ' + beerList[ran2].vote + ' votes');
