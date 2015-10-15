@@ -10,6 +10,11 @@ var Beer = function(src, drink) {
 
 }
 
+//Local Data
+var
+
+
+
 //images List
 var abt12 = new Beer('img/abt12.jpg', 'Abt 12');
 var bluemoon = new Beer('img/bluemoon.jpg', 'Blue Moon');
@@ -71,6 +76,7 @@ button1.addEventListener("click", function() {
 button2.addEventListener("click", function() {
   beerList[ran2].vote += 1;
   console.log(beerList[ran2].drink + ' has ' + beerList[ran2].vote + ' votes');
+
   displayImg();
   makeData();
 });
@@ -133,7 +139,7 @@ var data = [
 var context = document.getElementById('chart').getContext('2d');
 var beerChart = new Chart(context).Doughnut(data, {
 
-  animationSteps: 200,
+  animationSteps: 4,
 
   animationEasing: "easeOutBounce",
 
@@ -144,3 +150,5 @@ var beerChart = new Chart(context).Doughnut(data, {
 
 });
 };
+
+

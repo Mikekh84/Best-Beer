@@ -1,3 +1,25 @@
-header {
-  flex
+body {
+
+    background-color: cyan;
+    text-align: center
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 40%
+}
+
+section {
+  width: 40%;
+}
+
+aside {
+  width: 20%;
+  border: 5px;
+  border-color: black
+  border-style: solid;
+  float: right;
 }
