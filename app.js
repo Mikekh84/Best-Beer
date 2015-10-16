@@ -6,7 +6,6 @@ var button2 = document.getElementById('button2');
 var Beer = function(src, drink) {
   this.src = src;
   this.drink = drink;
-  this.vote = 0;
 
 };
 
@@ -31,7 +30,7 @@ var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
 //List of Beers
 var beerList =[abt12, bluemoon, bud, corona, frank, guinness,
               koestritzer, macandjacks];
- var ran1, ran2;
+var ran1, ran2;
 
 // Local Data
 // stringify beerList
@@ -60,6 +59,12 @@ var displayImg = function() {
   // console.log(getRandImg2);
   document.getElementById('imgone').src = getRandImg1.src;
   document.getElementById('imgtwo').src = getRandImg2.src;
+// Naming the picture
+
+
+
+
+
 /// Test Space within display IMG
 };
 
