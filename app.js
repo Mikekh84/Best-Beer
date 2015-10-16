@@ -8,12 +8,7 @@ var Beer = function(src, drink) {
   this.drink = drink;
   this.vote = 0;
 
-}
-
-//Local Data
-var
-
-
+};
 
 //images List
 var abt12 = new Beer('img/abt12.jpg', 'Abt 12');
@@ -32,10 +27,15 @@ var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
   }; //End of getRan
 
 
-  var ran1, ran2;
+
 //List of Beers
 var beerList =[abt12, bluemoon, bud, corona, frank, guinness,
               koestritzer, macandjacks];
+ var ran1, ran2;
+
+// Local Data
+// stringify beerList
+
 
 //Display Random Img
 var displayImg = function() {
@@ -60,15 +60,41 @@ var displayImg = function() {
   // console.log(getRandImg2);
   document.getElementById('imgone').src = getRandImg1.src;
   document.getElementById('imgtwo').src = getRandImg2.src;
-
 /// Test Space within display IMG
 };
-//call function
-displayImg();
 
+
+//Store Data
+
+// var jsonBeer = JSON.stringify(beerList);
+// var storeBeer = localStorage.setItem('beerkey', jsonBeer);
+
+var storeBeer = function() {
+  var jsonBeer = JSON.stringify(beerList);
+  for (var i =0; i < beerList.length; i++) {
+    if(beerList[i] !==0) {
+      localStorage.setItem('beerkey',jsonBeer);
+       }
+  }
+ };
+
+var checkStore =function() {
+  if (localStorage.getItem('beerkey')) {
+  var jsonData = localStorage.getItem('beerkey');
+  var parseBeer = JSON.parse(jsonData);
+  beerList = parseBeer;
+  }
+};
+
+
+
+//call function
+
+// storeBeer();
 button1.addEventListener("click", function() {
   beerList[ran1].vote += 1;
   console.log(beerList[ran1].drink + ' has ' + beerList[ran1].vote + ' votes');
+  storeBeer();
   displayImg();
   makeData();
 });
@@ -76,7 +102,7 @@ button1.addEventListener("click", function() {
 button2.addEventListener("click", function() {
   beerList[ran2].vote += 1;
   console.log(beerList[ran2].drink + ' has ' + beerList[ran2].vote + ' votes');
-
+  storeBeer();
   displayImg();
   makeData();
 });
@@ -152,3 +178,6 @@ var beerChart = new Chart(context).Doughnut(data, {
 };
 
 
+displayImg();
+checkStore();
+makeData();
