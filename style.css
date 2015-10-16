@@ -1,25 +1,37 @@
 body {
-
-    background-color: cyan;
-    text-align: center
+      text-align: center;
+  background: url(img/bg/beerbg.JPG);
+  background-color: gray;}
 }
 
-.images {
+header {
+}
+nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 40%
+  background: url(img/bg/beerborder.JPG);
+  background-color: gray;
+  margin: 10px;
+}
+main {
+/*  background: url(img/bg/beerbg.JPG);
+  background-color: gray;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 20%
+  margin: 10px;
 }
 
-section {
-  width: 40%;
-}
+
 
 aside {
-  width: 20%;
-  border: 5px;
-  border-color: black
-  border-style: solid;
-  float: right;
+  max-width: 20%;
+}
+
+ul {
+  list-style-type: none;
 }

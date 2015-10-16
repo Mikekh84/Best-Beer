@@ -10,55 +10,48 @@
 
 <body>
   <header>
-  <img src="img/logos/beergame_logo.jpg" width="960" height="300" />
 
-
-  <div class="upper">
-   <h1>The Best Beer Game</h1>
     <nav>
+   <h1>Which Beer is the Best Beer?</h1>
+   <h2>Click the picture of the beer you want to drink!</h2>
       <ul>Navgation
        <li><a href="index.html">Home</a></li>
        <li><a href="about.html">About</a></li>
-     </ul>
+      </ul>
+
+
     </nav>
-   </div>
 
-  <section class="title">
-    <h1>Which is the Best Beer</h1>
-    <p>Click the picture of the beer you want to drink!</p>
-  </section>
-</header>
+  </header>
 
-
-  <main>
+<main>
     <section  id="areaone">
-      <button type="click" id="button1"><img id="imgone" src="" width="400" height="400" /></button>
+      <button type="click" id="button1"><img id="imgone" src="" width="400" height="500" /></button>
     </section>
 
 
     <section id="areatwo">
       <button type="click" id="button2"><img id="imgtwo" src=""
-      width="400" height="400" /></button>
+      width="400" height="500" /></button>
     </section>
+
+  <div class="areathree">
+        <canvas id="chart" width="400" height="400"></canvas>
+    </div>
 </main>
 
   <aside>
   <h3>Local Breweries</h3>
   <ul>
-    <li><img src="img/logos/elysian_logo.png"  width="50" /><a href="http://www.elysianbrewing.com/">Elysian Brewing</a></li>
-    <li><img src="img/logos/macandjacks_logo.jpg" width="50"><a href="http://www.macandjacks.com/">Mac and Jack's Brewing</a></li>
-    <li><img src="img/logos/georgetown_logo.png" width="50"><a href="http://www.georgetownbeer.com/">Georgetown Brewing</li>
-    <li><img src="img/logos/scuttlebutt_logo.png" width="50"><a href="http://www.scuttlebuttbrewing.com/">Scuttlebutt Brewing</li>
+    <a href="http://www.elysianbrewing.com/"><li><img src="img/logos/elysian_logo.png"  width="50" /> Elysian Brewing</li></a>
+    <a href="http://www.macandjacks.com/"><li><img src="img/logos/macandjacks_logo.jpg" width="50">Mac and Jack's Brewing</li></a>
+    <a href="http://www.georgetownbeer.com/"><li><img src="img/logos/georgetown_logo.png" width="50">Georgetown Brewing</li></a>
+    <a href="http://www.scuttlebuttbrewing.com/"><li><img src="img/logos/scuttlebutt_logo.png" width="50">Scuttlebutt Brewing</li></a>
   </ul>
   </aside>
 
-  <div id="areathree">
-        <canvas id="chart" width="400" height="400"></canvas>
-    </div>
 
-
-
-  <script src="app.js"></script>
+ <script src="app.js"></script>
 
 
 </body>
