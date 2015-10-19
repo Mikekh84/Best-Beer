@@ -119,22 +119,22 @@ button2.addEventListener("click", function() {
   makeData();
 });
 
-// chart data
+// chart Data
 
 var makeData = function() {
 
 var data = [
 {
-  value: beerList[ran1].vote,
-  label: beerList[ran1].drink,
-  color: '#811BD6',
-  highlight:'#811BB6',
-},
-{
   value: beerList[ran2].vote,
   label: beerList[ran2].drink,
-  color: '#9CBABA',
-  highlight:'#9CBA99',
+  color: '#ED9405',
+  highlight:'#ED9405',
+},
+{
+  value: beerList[ran1].vote,
+  label: beerList[ran1].drink,
+  color: '#4AA331',
+  highlight:'#4AA331',
 },
 // {
 //   value: beerList[2].vote,
