@@ -6,8 +6,8 @@ var button2 = document.getElementById('button2');
 var Beer = function(src, drink) {
   this.src = src;
   this.drink = drink;
-
-};
+  // this.vote = vote
+  };
 
 //images List
 var abt12 = new Beer('img/abt12.jpg', 'Abt 12');
@@ -18,7 +18,12 @@ var frank = new Beer('img/franziskanber.jpg', 'Frankziskanber');
 var guinness = new Beer('img/guinness.jpg', 'Guinness');
 var koestritzer = new Beer('img/koestritzer.jpg', 'Koestritzer');
 var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
-
+var newcastle = new Beer('img/newcastlebrown.png', 'New Castle Brown');
+var nightowl = new Beer('img/nightowl.jpg', 'Night Owl');
+var pbr = new Beer('img/pbr.jpg', 'Pabst Blue Ribbon');
+var stella = new Beer('img/stellaartois.jpg', 'Stella Artois');
+var torpedo = new Beer('img/torpedo.png', 'Torpedo');
+var totald = new Beer('img/totaldomination.jpg', 'Total Domination');
 
 //Generate Random #1
   var getRan = function() {
@@ -29,7 +34,9 @@ var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
 
 //List of Beers
 var beerList =[abt12, bluemoon, bud, corona, frank, guinness,
-              koestritzer, macandjacks];
+              koestritzer, macandjacks, newcastle, nightowl, pbr,
+              stella, torpedo, totald];
+
 var ran1, ran2;
 
 // Local Data
@@ -121,13 +128,13 @@ var data = [
   value: beerList[ran1].vote,
   label: beerList[ran1].drink,
   color: '#811BD6',
-  highlight:'#811BB6'
+  highlight:'#811BB6',
 },
 {
   value: beerList[ran2].vote,
   label: beerList[ran2].drink,
   color: '#9CBABA',
-  highlight:'#9CBA99'
+  highlight:'#9CBA99',
 },
 // {
 //   value: beerList[2].vote,
