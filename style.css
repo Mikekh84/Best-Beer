@@ -1,3 +1,52 @@
-header {
-  flex
+body {
+      text-align: center;
+  background: url(img/bg/beerbg.JPG);
+  background-color: gray;}
 }
+
+header {
+background-color: black;
+}
+nav {
+  font-family: 'Lobster', cursive;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: url(img/bg/beerborder.JPG);
+  background-color: gray;
+  margin: 10px;
+}
+main {
+  font-family: 'Lobster', cursive;
+  font-size: 200%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 20%
+  margin: 10px;
+}
+
+
+figure.img {
+  background: url(img/bg/beerbg.JPG);
+  opacity: 1,
+
+}
+
+aside {
+  font-family: 'Lobster', cursive;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1px;
+
+}
+
+
+ul {
+  list-style-type: none;
+}
+
