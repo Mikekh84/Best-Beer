@@ -3,27 +3,27 @@
 var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 
-var Beer = function(src, drink) {
+var Beer = function(src, drink,vote) {
   this.src = src;
   this.drink = drink;
-  // this.vote = vote
+  this.vote = vote
   };
 
 //images List
-var abt12 = new Beer('img/abt12.jpg', 'Abt 12');
-var bluemoon = new Beer('img/bluemoon.jpg', 'Blue Moon');
-var bud = new Beer('img/bud.jpg', 'Budweiser');
-var corona = new Beer('img/corona.jpg', 'Corona');
-var frank = new Beer('img/franziskanber.jpg', 'Frankziskanber');
-var guinness = new Beer('img/guinness.jpg', 'Guinness');
-var koestritzer = new Beer('img/koestritzer.jpg', 'Koestritzer');
-var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks');
-var newcastle = new Beer('img/newcastlebrown.png', 'New Castle Brown');
-var nightowl = new Beer('img/nightowl.jpg', 'Night Owl');
-var pbr = new Beer('img/pbr.jpg', 'Pabst Blue Ribbon');
-var stella = new Beer('img/stellaartois.jpg', 'Stella Artois');
-var torpedo = new Beer('img/torpedo.png', 'Torpedo');
-var totald = new Beer('img/totaldomination.jpg', 'Total Domination');
+var abt12 = new Beer('img/abt12.jpg', 'Abt 12',0);
+var bluemoon = new Beer('img/bluemoon.jpg', 'Blue Moon',0);
+var bud = new Beer('img/bud.jpg', 'Budweiser',0);
+var corona = new Beer('img/corona.jpg', 'Corona', 0);
+var frank = new Beer('img/franziskanber.jpg', 'Frankziskanber', 0);
+var guinness = new Beer('img/guinness.jpg', 'Guinness', 0);
+var koestritzer = new Beer('img/koestritzer.jpg', 'Koestritzer', 0);
+var macandjacks = new Beer('img/mackandjacks.jpg', 'Mac and Jacks', 0);
+var newcastle = new Beer('img/newcastlebrown.png', 'New Castle Brown', 0);
+var nightowl = new Beer('img/nightowl.jpg', 'Night Owl', 0);
+var pbr = new Beer('img/pbr.jpg', 'Pabst Blue Ribbon', 0);
+var stella = new Beer('img/stellaartois.jpg', 'Stella Artois', 0);
+var torpedo = new Beer('img/torpedo.png', 'Torpedo', 0);
+var totald = new Beer('img/totaldomination.jpg', 'Total Domination', 0);
 
 //Generate Random #1
   var getRan = function() {
